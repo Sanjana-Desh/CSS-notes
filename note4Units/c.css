@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 
-/* Remove all extra  */
+/* Remove all extra, border box matlab the size we give for content it is going to include padding and border, 
+while the content-box the content which we specified will be as much, 
+it'll not include size of border or padding */
+
 
 header{
     width: 50%;
