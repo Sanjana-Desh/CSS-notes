@@ -1,4 +1,6 @@
 # Font size 
+
+
 - Generally in rem i.e 16px;
 - Inheritance is accepted in typography, but not for formed elements;
 - color property is used to change color;
@@ -10,12 +12,26 @@
 - letter-spacing:0.1em;
 - word-spacing: 0.1em;
 
+
 # Font type
+
+
 - font-weight;
 - font-style: italic/oblique;
 - font-family;
 
 
+# Pseudo-class
+
+
+- a:visited{};
+- a:hover{};
+- a:active{};
+- a:focus{};
+
+
 # tool 
 
+
 - fonts.google.com
+- specificity calculator
