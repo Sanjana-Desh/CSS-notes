@@ -21,3 +21,18 @@
     /* this also applies margin after block  */
 }
 
+.clear{
+    clear: both;
+}
+/* this helps in clearing float propertry from where its used
+  */
+
+.s {
+    background-color: papayawhip;
+    border: 2px solid black;
+    overflow: auto;
+    /* remove overflow to check */
+    /* display : flow-root;  */
+    /* this is alternative and more prefered */
+}
+
