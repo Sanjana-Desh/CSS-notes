@@ -1,0 +1,23 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+
+
+.block {
+    width :30vw;
+    height: 30vw;
+    background-color: #000;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+.left{
+    float: left;
+    /* margin-right: 1rem; */
+    /* this also applies margin after block  */
+}
+
