@@ -1,0 +1,17 @@
+body{
+    font-size:  2rem;
+    font-family: serif;
+}
+
+p{
+    background-color: lightgray;
+   
+}
+
+span{
+    background-color: gray;
+    color: whitesmoke;
+    margin: 100px 0px;
+    display: inline-block;
+    padding: 2rem;
+}
