@@ -1,1 +1,37 @@
-.column
+body{
+    font-size: 1.5rem;
+}
+
+
+.columns{
+    column-count: 4;/* Column count sets it to 4 columns */
+    column-width: 250px; /* the column width per column is set to 250px, the columns will only expand if 250 pixels are there*/
+    /* columns: 4 250px; same thing as two above*/
+    column-rule: 3px solid black; /* same like providing border, lines between column they disapper when column disappear*/
+    column-gap: 3rem; /*Spacing between the column*/
+    
+}
+
+/* margins above below overlap */
+
+.columns{
+    margin-top: 0px;
+}
+
+.column-h2{
+    background-color: rgb(0, 0, 0);
+    margin-top: 0;
+    color: white;
+    padding: 1rem;
+    break-inside: avoid; /* Avoids splitting header */
+    break-before: column; /*Not good to use*/
+
+    /* Break inside and break before didnt work in my computer when i tried it, maybe changed after years */
+}
+pre {
+    max-width: 100%; /* Prevents it from exceeding the container */
+    text-align: center;
+    white-space: pre-wrap;
+     /* Allows the text to wrap or when you reduce screen size the page shrinks */
+    column-span: all;
+}
