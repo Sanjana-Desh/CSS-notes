@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+}
+
+.blue{
+    background-color: rgb(94, 94, 206);
+}
+
+.red{
+    background-color: tomato;
+}
+
+.green{
+    background-color: rgb(94, 186, 94);
+}
+
+header, footer{
+    color: white;
+    text-align: center;
+    height: 100px;
+    font-size: 5rem;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+footer{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+.social{
+    background-color: cornflowerblue;
+    color: white;
+    font-size: inherit;
+    padding: 1rem;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 1;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* remove this and click footer link and try */

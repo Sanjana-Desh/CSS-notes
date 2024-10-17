@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+   
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    min-height: 200vh;
+}
+
+.outer-container{
+    border: 2px dashed black;
+    width : 75vw; 
+    height: 85vh;
+    margin: 40px auto;
+    position: relative;
+    /* This acts as parent to absolute */
+
+}
+
+.inner-container {
+    border: 2px solid rgb(88, 116, 7);
+    width: 40vw;
+    height: 50vh;
+    margin: 200px auto;
+    /* 200px: This sets the top and bottom margins to 200 pixels. */
+/* auto: This value for the left and right margins centers the element horizontally within its container. When the left and right margins are set to auto, the browser calculates equal margins on both sides, centering the element. */
+/* Or generally it is top right bottom left */
+    position: relative;
+    /* This is choosen as parent since its closest */
+}
+
+.box
+{
+    width: 150px;
+    height: 150px;
+    color: white;
+    padding: 1rem;
+}
+
+.absolute {
+    background-color: papayawhip;
+    position: absolute; 
+    /* default is static, even if you dont set itll be static */
+    /* when we set absolute, no change cuz we did't set any value */
+    top: 1rem; 
+    /* moved to top */
+    left: 4rem;
+   
+    /* moved to left, absolute positioning needs parent if no parent it takes the browser as parent */
+    /* Chooses inner box, next outer, if none of them is relative then chooses browser */
+    z-index: 1;
+    /* Higher z-index values place elements closer to the viewer (on top of other elements). */
+
+
+}
+
+.Relative 
+{
+    background-color: rgb(39, 171, 39);
+    position: relative;
+    /* This is always going to be relative to the parent, we dont have to set parent as relative as in case of absolute */
+
+    top: 10rem;
+    left:150px;
+}
+
+.fixed{
+    background-color: tomato;
+    position: fixed;
+    top:100px;
+    /* Doesn't care about parent, it aligns with browser and stays even if you scroll */
+    /* relative and fixed above absolute, if absolute div is written below then that will come ate top */
+
+}
+
+.sticky{
+    background-color: violet;
+    position: sticky;
+    /* It'll stay until normal flow until a spot you have defined */
+    top:0;
+    /* when fixed container catches to it, itll slide with container until the box it is in then scrolls over */
+    
+    margin:0 1rem;
+}
+
+/* sticky is relative to the parent element and sticks as the user scrolls within that context.
+fixed is relative to the viewport and stays in place regardless of the user's scroll position. */
